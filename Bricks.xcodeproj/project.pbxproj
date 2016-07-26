@@ -7,13 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACEFD0FE1D1341ED00B177BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD0FD1D1341ED00B177BF /* AppDelegate.swift */; };
-		ACEFD1001D1341ED00B177BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD0FF1D1341ED00B177BF /* ViewController.swift */; };
-		ACEFD1031D1341ED00B177BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1011D1341ED00B177BF /* Main.storyboard */; };
-		ACEFD1051D1341ED00B177BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1041D1341ED00B177BF /* Assets.xcassets */; };
-		ACEFD1081D1341ED00B177BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1061D1341ED00B177BF /* LaunchScreen.storyboard */; };
+		AC6665CA1D3ACD24003DFEA2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6665C91D3ACD24003DFEA2 /* CloudKit.framework */; };
 		ACEFD1131D1341ED00B177BF /* BricksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1121D1341ED00B177BF /* BricksTests.swift */; };
 		ACEFD11E1D1341ED00B177BF /* BricksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD11D1D1341ED00B177BF /* BricksUITests.swift */; };
+		ACEFD1321D13425D00B177BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD12F1D13425D00B177BF /* AppDelegate.swift */; };
+		ACEFD1331D13425D00B177BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1301D13425D00B177BF /* Main.storyboard */; };
+		ACEFD1341D13425D00B177BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1311D13425D00B177BF /* Assets.xcassets */; };
+		ACEFD1451D1342DE00B177BF /* GFRTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1371D1342DE00B177BF /* GFRTabBarController.swift */; };
+		ACEFD1461D1342DE00B177BF /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1381D1342DE00B177BF /* AppearanceController.swift */; };
+		ACEFD1471D1342DE00B177BF /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1391D1342DE00B177BF /* FirebaseController.swift */; };
+		ACEFD1481D1342DE00B177BF /* DateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD13A1D1342DE00B177BF /* DateController.swift */; };
+		ACEFD1491D1342DE00B177BF /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD13B1D1342DE00B177BF /* UserController.swift */; };
+		ACEFD14A1D1342DE00B177BF /* RoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD13C1D1342DE00B177BF /* RoleController.swift */; };
+		ACEFD14B1D1342DE00B177BF /* GoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD13D1D1342DE00B177BF /* GoalController.swift */; };
+		ACEFD14C1D1342DE00B177BF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD13E1D1342DE00B177BF /* NotificationController.swift */; };
+		ACEFD14D1D1342DE00B177BF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD13F1D1342DE00B177BF /* ColorExtension.swift */; };
+		ACEFD14E1D1342DE00B177BF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1401D1342DE00B177BF /* StringExtension.swift */; };
+		ACEFD14F1D1342DE00B177BF /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1411D1342DE00B177BF /* NSDateExtension.swift */; };
+		ACEFD1501D1342DE00B177BF /* cloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1421D1342DE00B177BF /* cloudKitController.swift */; };
+		ACEFD1511D1342DE00B177BF /* DigitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1431D1342DE00B177BF /* DigitsController.swift */; };
+		ACEFD1701D1342ED00B177BF /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1521D1342ED00B177BF /* GiftViewController.swift */; };
+		ACEFD1711D1342ED00B177BF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1531D1342ED00B177BF /* LoadingViewController.swift */; };
+		ACEFD1721D1342ED00B177BF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1541D1342ED00B177BF /* SignUpViewController.swift */; };
+		ACEFD1731D1342ED00B177BF /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1551D1342ED00B177BF /* DayViewController.swift */; };
+		ACEFD1741D1342ED00B177BF /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1561D1342ED00B177BF /* WeekViewController.swift */; };
+		ACEFD1751D1342ED00B177BF /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1571D1342ED00B177BF /* MonthViewController.swift */; };
+		ACEFD1761D1342ED00B177BF /* MonthSubTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1581D1342ED00B177BF /* MonthSubTableView.swift */; };
+		ACEFD1771D1342ED00B177BF /* AccountabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1591D1342ED00B177BF /* AccountabilityViewController.swift */; };
+		ACEFD1781D1342ED00B177BF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD15A1D1342ED00B177BF /* SettingsViewController.swift */; };
+		ACEFD1791D1342ED00B177BF /* PersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD15B1D1342ED00B177BF /* PersonalInformationViewController.swift */; };
+		ACEFD17A1D1342ED00B177BF /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD15C1D1342ED00B177BF /* EditTableViewController.swift */; };
+		ACEFD17B1D1342ED00B177BF /* NewRoleGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD15D1D1342ED00B177BF /* NewRoleGoalViewController.swift */; };
+		ACEFD17C1D1342ED00B177BF /* NewGoalButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD15E1D1342ED00B177BF /* NewGoalButtonTableViewCell.swift */; };
+		ACEFD17D1D1342ED00B177BF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD15F1D1342ED00B177BF /* HeaderView.swift */; };
+		ACEFD17E1D1342ED00B177BF /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1601D1342ED00B177BF /* HeaderView.xib */; };
+		ACEFD17F1D1342ED00B177BF /* WeekOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1621D1342ED00B177BF /* WeekOverviewTableViewCell.swift */; };
+		ACEFD1801D1342ED00B177BF /* PersonalInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1631D1342ED00B177BF /* PersonalInformationTableViewCell.swift */; };
+		ACEFD1811D1342ED00B177BF /* NewRoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1641D1342ED00B177BF /* NewRoleTableViewCell.swift */; };
+		ACEFD1821D1342ED00B177BF /* NewGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1651D1342ED00B177BF /* NewGoalTableViewCell.swift */; };
+		ACEFD1831D1342ED00B177BF /* AccountabilityRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1661D1342ED00B177BF /* AccountabilityRequestTableViewCell.swift */; };
+		ACEFD1841D1342ED00B177BF /* GoalOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1671D1342ED00B177BF /* GoalOverviewTableViewCell.swift */; };
+		ACEFD1851D1342ED00B177BF /* DailyMarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1681D1342ED00B177BF /* DailyMarkTableViewCell.swift */; };
+		ACEFD1861D1342ED00B177BF /* WeekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1691D1342ED00B177BF /* WeekTableViewCell.swift */; };
+		ACEFD1871D1342ED00B177BF /* EditGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD16A1D1342ED00B177BF /* EditGoalTableViewCell.swift */; };
+		ACEFD1881D1342ED00B177BF /* PickerViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD16B1D1342ED00B177BF /* PickerViewTableViewCell.swift */; };
+		ACEFD1891D1342ED00B177BF /* NotificationsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD16D1D1342ED00B177BF /* NotificationsListTableViewController.swift */; };
+		ACEFD18A1D1342ED00B177BF /* SelectDimensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD16E1D1342ED00B177BF /* SelectDimensionsViewController.swift */; };
+		ACEFD1911D13431500B177BF /* WeekdayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD18C1D13431500B177BF /* WeekdayButton.swift */; };
+		ACEFD1921D13431500B177BF /* WeekdayButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD18D1D13431500B177BF /* WeekdayButton.xib */; };
+		ACEFD1931D13431500B177BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD18E1D13431500B177BF /* User.swift */; };
+		ACEFD1941D13431500B177BF /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD18F1D13431500B177BF /* Role.swift */; };
+		ACEFD1951D13431500B177BF /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1901D13431500B177BF /* Goal.swift */; };
+		ACEFD19E1D13435F00B177BF /* OnboadingQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1981D13435F00B177BF /* OnboadingQuoteViewController.swift */; };
+		ACEFD19F1D13435F00B177BF /* QuoteImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1991D13435F00B177BF /* QuoteImageCollectionViewCell.swift */; };
+		ACEFD1A01D13435F00B177BF /* OnboardingQuotePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD19A1D13435F00B177BF /* OnboardingQuotePageViewController.swift */; };
+		ACEFD1A11D13435F00B177BF /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD19B1D13435F00B177BF /* PagingViewController.swift */; };
+		ACEFD1A21D13435F00B177BF /* SetupRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD19C1D13435F00B177BF /* SetupRolesViewController.swift */; };
+		ACEFD1A31D13435F00B177BF /* RoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD19D1D13435F00B177BF /* RoleTableViewCell.swift */; };
+		ACEFD1A51D13437200B177BF /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1A41D13437200B177BF /* LaunchScreenViewController.swift */; };
+		ACEFD1A71D13437B00B177BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1A61D13437B00B177BF /* LaunchScreen.storyboard */; };
+		ACEFD20A1D1347ED00B177BF /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2061D1347ED00B177BF /* Fabric.framework */; };
+		ACEFD20B1D1347ED00B177BF /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2071D1347ED00B177BF /* DigitsKit.framework */; };
+		ACEFD20C1D1347ED00B177BF /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD2081D1347ED00B177BF /* DigitsKitResources.bundle */; };
+		ACEFD20D1D1347ED00B177BF /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2091D1347ED00B177BF /* TwitterCore.framework */; };
+		ACEFD2211D13484D00B177BF /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD21B1D13484D00B177BF /* Firebase.framework */; };
+		ACEFD2251D13484D00B177BF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD21F1D13484D00B177BF /* libc++.tbd */; };
+		ACEFD2261D13484D00B177BF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2201D13484D00B177BF /* libicucore.tbd */; };
+		ACEFD2281D13495300B177BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2271D13495300B177BF /* Security.framework */; };
+		ACEFD22A1D13496500B177BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2291D13496500B177BF /* SystemConfiguration.framework */; };
+		ACEFD22C1D13497800B177BF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD22B1D13497800B177BF /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +96,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC6665C91D3ACD24003DFEA2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		ACEFD0FA1D1341ED00B177BF /* Bricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACEFD0FD1D1341ED00B177BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACEFD0FF1D1341ED00B177BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACEFD1021D1341ED00B177BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ACEFD1041D1341ED00B177BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACEFD1071D1341ED00B177BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACEFD1091D1341ED00B177BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEFD10E1D1341ED00B177BF /* BricksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BricksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEFD1121D1341ED00B177BF /* BricksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BricksTests.swift; sourceTree = "<group>"; };
@@ -47,6 +105,74 @@
 		ACEFD1191D1341ED00B177BF /* BricksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BricksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEFD11D1D1341ED00B177BF /* BricksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BricksUITests.swift; sourceTree = "<group>"; };
 		ACEFD11F1D1341ED00B177BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEFD12B1D13420700B177BF /* Bricks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bricks.entitlements; sourceTree = "<group>"; };
+		ACEFD12E1D13425C00B177BF /* Bricks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bricks-Bridging-Header.h"; sourceTree = "<group>"; };
+		ACEFD12F1D13425D00B177BF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACEFD1301D13425D00B177BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ACEFD1311D13425D00B177BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACEFD1371D1342DE00B177BF /* GFRTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GFRTabBarController.swift; sourceTree = "<group>"; };
+		ACEFD1381D1342DE00B177BF /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		ACEFD1391D1342DE00B177BF /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		ACEFD13A1D1342DE00B177BF /* DateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateController.swift; path = ../DateController.swift; sourceTree = "<group>"; };
+		ACEFD13B1D1342DE00B177BF /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		ACEFD13C1D1342DE00B177BF /* RoleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleController.swift; sourceTree = "<group>"; };
+		ACEFD13D1D1342DE00B177BF /* GoalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalController.swift; sourceTree = "<group>"; };
+		ACEFD13E1D1342DE00B177BF /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ACEFD13F1D1342DE00B177BF /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		ACEFD1401D1342DE00B177BF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		ACEFD1411D1342DE00B177BF /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		ACEFD1421D1342DE00B177BF /* cloudKitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cloudKitController.swift; sourceTree = "<group>"; };
+		ACEFD1431D1342DE00B177BF /* DigitsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitsController.swift; sourceTree = "<group>"; };
+		ACEFD1521D1342ED00B177BF /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
+		ACEFD1531D1342ED00B177BF /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		ACEFD1541D1342ED00B177BF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		ACEFD1551D1342ED00B177BF /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		ACEFD1561D1342ED00B177BF /* WeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
+		ACEFD1571D1342ED00B177BF /* MonthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
+		ACEFD1581D1342ED00B177BF /* MonthSubTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthSubTableView.swift; sourceTree = "<group>"; };
+		ACEFD1591D1342ED00B177BF /* AccountabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountabilityViewController.swift; sourceTree = "<group>"; };
+		ACEFD15A1D1342ED00B177BF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Assets.xcassets/SettingsViewController.swift; sourceTree = "<group>"; };
+		ACEFD15B1D1342ED00B177BF /* PersonalInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInformationViewController.swift; sourceTree = "<group>"; };
+		ACEFD15C1D1342ED00B177BF /* EditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
+		ACEFD15D1D1342ED00B177BF /* NewRoleGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRoleGoalViewController.swift; sourceTree = "<group>"; };
+		ACEFD15E1D1342ED00B177BF /* NewGoalButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalButtonTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD15F1D1342ED00B177BF /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		ACEFD1601D1342ED00B177BF /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		ACEFD1621D1342ED00B177BF /* WeekOverviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekOverviewTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1631D1342ED00B177BF /* PersonalInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInformationTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1641D1342ED00B177BF /* NewRoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRoleTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1651D1342ED00B177BF /* NewGoalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1661D1342ED00B177BF /* AccountabilityRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountabilityRequestTableViewCell.swift; path = ../AccountabilityRequestTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1671D1342ED00B177BF /* GoalOverviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalOverviewTableViewCell.swift; path = ../GoalOverviewTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1681D1342ED00B177BF /* DailyMarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyMarkTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1691D1342ED00B177BF /* WeekTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD16A1D1342ED00B177BF /* EditGoalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGoalTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD16B1D1342ED00B177BF /* PickerViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD16D1D1342ED00B177BF /* NotificationsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsListTableViewController.swift; sourceTree = "<group>"; };
+		ACEFD16E1D1342ED00B177BF /* SelectDimensionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDimensionsViewController.swift; sourceTree = "<group>"; };
+		ACEFD18C1D13431500B177BF /* WeekdayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdayButton.swift; sourceTree = "<group>"; };
+		ACEFD18D1D13431500B177BF /* WeekdayButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekdayButton.xib; sourceTree = "<group>"; };
+		ACEFD18E1D13431500B177BF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ACEFD18F1D13431500B177BF /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		ACEFD1901D13431500B177BF /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		ACEFD1981D13435F00B177BF /* OnboadingQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboadingQuoteViewController.swift; sourceTree = "<group>"; };
+		ACEFD1991D13435F00B177BF /* QuoteImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACEFD19A1D13435F00B177BF /* OnboardingQuotePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingQuotePageViewController.swift; sourceTree = "<group>"; };
+		ACEFD19B1D13435F00B177BF /* PagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
+		ACEFD19C1D13435F00B177BF /* SetupRolesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupRolesViewController.swift; sourceTree = "<group>"; };
+		ACEFD19D1D13435F00B177BF /* RoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleTableViewCell.swift; sourceTree = "<group>"; };
+		ACEFD1A41D13437200B177BF /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		ACEFD1A61D13437B00B177BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACEFD2061D1347ED00B177BF /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		ACEFD2071D1347ED00B177BF /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		ACEFD2081D1347ED00B177BF /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DigitsKitResources.bundle; sourceTree = "<group>"; };
+		ACEFD2091D1347ED00B177BF /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		ACEFD21B1D13484D00B177BF /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		ACEFD21F1D13484D00B177BF /* libc++.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = "libc++.tbd"; sourceTree = "<group>"; };
+		ACEFD2201D13484D00B177BF /* libicucore.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libicucore.tbd; sourceTree = "<group>"; };
+		ACEFD2271D13495300B177BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ACEFD2291D13496500B177BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACEFD22B1D13497800B177BF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +180,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEFD22C1D13497800B177BF /* CFNetwork.framework in Frameworks */,
+				ACEFD22A1D13496500B177BF /* SystemConfiguration.framework in Frameworks */,
+				ACEFD2281D13495300B177BF /* Security.framework in Frameworks */,
+				ACEFD20A1D1347ED00B177BF /* Fabric.framework in Frameworks */,
+				ACEFD20B1D1347ED00B177BF /* DigitsKit.framework in Frameworks */,
+				AC6665CA1D3ACD24003DFEA2 /* CloudKit.framework in Frameworks */,
+				ACEFD20D1D1347ED00B177BF /* TwitterCore.framework in Frameworks */,
+				ACEFD2211D13484D00B177BF /* Firebase.framework in Frameworks */,
+				ACEFD2251D13484D00B177BF /* libc++.tbd in Frameworks */,
+				ACEFD2261D13484D00B177BF /* libicucore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +213,7 @@
 		ACEFD0F11D1341ED00B177BF = {
 			isa = PBXGroup;
 			children = (
+				AC6665C91D3ACD24003DFEA2 /* CloudKit.framework */,
 				ACEFD0FC1D1341ED00B177BF /* Bricks */,
 				ACEFD1111D1341ED00B177BF /* BricksTests */,
 				ACEFD11C1D1341ED00B177BF /* BricksUITests */,
@@ -97,12 +234,19 @@
 		ACEFD0FC1D1341ED00B177BF /* Bricks */ = {
 			isa = PBXGroup;
 			children = (
-				ACEFD0FD1D1341ED00B177BF /* AppDelegate.swift */,
-				ACEFD0FF1D1341ED00B177BF /* ViewController.swift */,
-				ACEFD1011D1341ED00B177BF /* Main.storyboard */,
-				ACEFD1041D1341ED00B177BF /* Assets.xcassets */,
-				ACEFD1061D1341ED00B177BF /* LaunchScreen.storyboard */,
+				ACEFD12B1D13420700B177BF /* Bricks.entitlements */,
+				ACEFD1351D1342A100B177BF /* Firebase */,
+				ACEFD12F1D13425D00B177BF /* AppDelegate.swift */,
+				ACEFD1441D1342DE00B177BF /* Controllers */,
+				ACEFD1301D13425D00B177BF /* Main.storyboard */,
+				ACEFD16F1D1342ED00B177BF /* ViewControllers */,
+				ACEFD1311D13425D00B177BF /* Assets.xcassets */,
+				ACEFD1961D13433300B177BF /* launchScreen */,
+				ACEFD1971D13434A00B177BF /* Onboarding */,
+				ACEFD18B1D13430E00B177BF /* Model */,
 				ACEFD1091D1341ED00B177BF /* Info.plist */,
+				ACEFD2051D1347E200B177BF /* Digits&Fabric */,
+				ACEFD12E1D13425C00B177BF /* Bricks-Bridging-Header.h */,
 			);
 			path = Bricks;
 			sourceTree = "<group>";
@@ -125,6 +269,136 @@
 			path = BricksUITests;
 			sourceTree = "<group>";
 		};
+		ACEFD1351D1342A100B177BF /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD22B1D13497800B177BF /* CFNetwork.framework */,
+				ACEFD2291D13496500B177BF /* SystemConfiguration.framework */,
+				ACEFD2271D13495300B177BF /* Security.framework */,
+				ACEFD21B1D13484D00B177BF /* Firebase.framework */,
+				ACEFD21F1D13484D00B177BF /* libc++.tbd */,
+				ACEFD2201D13484D00B177BF /* libicucore.tbd */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		ACEFD1441D1342DE00B177BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD1371D1342DE00B177BF /* GFRTabBarController.swift */,
+				ACEFD1381D1342DE00B177BF /* AppearanceController.swift */,
+				ACEFD1391D1342DE00B177BF /* FirebaseController.swift */,
+				ACEFD13A1D1342DE00B177BF /* DateController.swift */,
+				ACEFD13B1D1342DE00B177BF /* UserController.swift */,
+				ACEFD13C1D1342DE00B177BF /* RoleController.swift */,
+				ACEFD13D1D1342DE00B177BF /* GoalController.swift */,
+				ACEFD13E1D1342DE00B177BF /* NotificationController.swift */,
+				ACEFD13F1D1342DE00B177BF /* ColorExtension.swift */,
+				ACEFD1401D1342DE00B177BF /* StringExtension.swift */,
+				ACEFD1411D1342DE00B177BF /* NSDateExtension.swift */,
+				ACEFD1421D1342DE00B177BF /* cloudKitController.swift */,
+				ACEFD1431D1342DE00B177BF /* DigitsController.swift */,
+			);
+			name = Controllers;
+			path = ../../../Documents/GoalsForRoles/GoalsForRoles;
+			sourceTree = "<group>";
+		};
+		ACEFD1611D1342ED00B177BF /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD15F1D1342ED00B177BF /* HeaderView.swift */,
+				ACEFD1601D1342ED00B177BF /* HeaderView.xib */,
+			);
+			name = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		ACEFD16C1D1342ED00B177BF /* TableviewCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD1621D1342ED00B177BF /* WeekOverviewTableViewCell.swift */,
+				ACEFD1631D1342ED00B177BF /* PersonalInformationTableViewCell.swift */,
+				ACEFD1641D1342ED00B177BF /* NewRoleTableViewCell.swift */,
+				ACEFD1651D1342ED00B177BF /* NewGoalTableViewCell.swift */,
+				ACEFD1661D1342ED00B177BF /* AccountabilityRequestTableViewCell.swift */,
+				ACEFD1671D1342ED00B177BF /* GoalOverviewTableViewCell.swift */,
+				ACEFD1681D1342ED00B177BF /* DailyMarkTableViewCell.swift */,
+				ACEFD1691D1342ED00B177BF /* WeekTableViewCell.swift */,
+				ACEFD16A1D1342ED00B177BF /* EditGoalTableViewCell.swift */,
+				ACEFD16B1D1342ED00B177BF /* PickerViewTableViewCell.swift */,
+			);
+			name = TableviewCells;
+			sourceTree = "<group>";
+		};
+		ACEFD16F1D1342ED00B177BF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD1521D1342ED00B177BF /* GiftViewController.swift */,
+				ACEFD1531D1342ED00B177BF /* LoadingViewController.swift */,
+				ACEFD1541D1342ED00B177BF /* SignUpViewController.swift */,
+				ACEFD1551D1342ED00B177BF /* DayViewController.swift */,
+				ACEFD1561D1342ED00B177BF /* WeekViewController.swift */,
+				ACEFD1571D1342ED00B177BF /* MonthViewController.swift */,
+				ACEFD1581D1342ED00B177BF /* MonthSubTableView.swift */,
+				ACEFD1591D1342ED00B177BF /* AccountabilityViewController.swift */,
+				ACEFD15A1D1342ED00B177BF /* SettingsViewController.swift */,
+				ACEFD15B1D1342ED00B177BF /* PersonalInformationViewController.swift */,
+				ACEFD15C1D1342ED00B177BF /* EditTableViewController.swift */,
+				ACEFD15D1D1342ED00B177BF /* NewRoleGoalViewController.swift */,
+				ACEFD15E1D1342ED00B177BF /* NewGoalButtonTableViewCell.swift */,
+				ACEFD1611D1342ED00B177BF /* Reusable Views */,
+				ACEFD16C1D1342ED00B177BF /* TableviewCells */,
+				ACEFD16D1D1342ED00B177BF /* NotificationsListTableViewController.swift */,
+				ACEFD16E1D1342ED00B177BF /* SelectDimensionsViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ../../../Documents/GoalsForRoles/GoalsForRoles;
+			sourceTree = "<group>";
+		};
+		ACEFD18B1D13430E00B177BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD18C1D13431500B177BF /* WeekdayButton.swift */,
+				ACEFD18D1D13431500B177BF /* WeekdayButton.xib */,
+				ACEFD18E1D13431500B177BF /* User.swift */,
+				ACEFD18F1D13431500B177BF /* Role.swift */,
+				ACEFD1901D13431500B177BF /* Goal.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ACEFD1961D13433300B177BF /* launchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD1A61D13437B00B177BF /* LaunchScreen.storyboard */,
+				ACEFD1A41D13437200B177BF /* LaunchScreenViewController.swift */,
+			);
+			name = launchScreen;
+			sourceTree = "<group>";
+		};
+		ACEFD1971D13434A00B177BF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD1981D13435F00B177BF /* OnboadingQuoteViewController.swift */,
+				ACEFD1991D13435F00B177BF /* QuoteImageCollectionViewCell.swift */,
+				ACEFD19A1D13435F00B177BF /* OnboardingQuotePageViewController.swift */,
+				ACEFD19B1D13435F00B177BF /* PagingViewController.swift */,
+				ACEFD19C1D13435F00B177BF /* SetupRolesViewController.swift */,
+				ACEFD19D1D13435F00B177BF /* RoleTableViewCell.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		ACEFD2051D1347E200B177BF /* Digits&Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFD2061D1347ED00B177BF /* Fabric.framework */,
+				ACEFD2071D1347ED00B177BF /* DigitsKit.framework */,
+				ACEFD2081D1347ED00B177BF /* DigitsKitResources.bundle */,
+				ACEFD2091D1347ED00B177BF /* TwitterCore.framework */,
+			);
+			name = "Digits&Fabric";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +409,7 @@
 				ACEFD0F61D1341ED00B177BF /* Sources */,
 				ACEFD0F71D1341ED00B177BF /* Frameworks */,
 				ACEFD0F81D1341ED00B177BF /* Resources */,
+				ACEFD2581D134E2600B177BF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,6 +468,15 @@
 				TargetAttributes = {
 					ACEFD0F91D1341ED00B177BF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FRU4JR96G8;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					ACEFD10D1D1341ED00B177BF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -229,9 +513,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEFD1081D1341ED00B177BF /* LaunchScreen.storyboard in Resources */,
-				ACEFD1051D1341ED00B177BF /* Assets.xcassets in Resources */,
-				ACEFD1031D1341ED00B177BF /* Main.storyboard in Resources */,
+				ACEFD1921D13431500B177BF /* WeekdayButton.xib in Resources */,
+				ACEFD17E1D1342ED00B177BF /* HeaderView.xib in Resources */,
+				ACEFD20C1D1347ED00B177BF /* DigitsKitResources.bundle in Resources */,
+				ACEFD1341D13425D00B177BF /* Assets.xcassets in Resources */,
+				ACEFD1A71D13437B00B177BF /* LaunchScreen.storyboard in Resources */,
+				ACEFD1331D13425D00B177BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +538,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ACEFD2581D134E2600B177BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c15a668767e1ab144848398dca57d694cbbf586e 5748df7100b7943d3960310c29b0496bc9f4cf9e32a000697abb96858fa5d471";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACEFD0F61D1341ED00B177BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEFD1001D1341ED00B177BF /* ViewController.swift in Sources */,
-				ACEFD0FE1D1341ED00B177BF /* AppDelegate.swift in Sources */,
+				ACEFD1761D1342ED00B177BF /* MonthSubTableView.swift in Sources */,
+				ACEFD19F1D13435F00B177BF /* QuoteImageCollectionViewCell.swift in Sources */,
+				ACEFD1501D1342DE00B177BF /* cloudKitController.swift in Sources */,
+				ACEFD1751D1342ED00B177BF /* MonthViewController.swift in Sources */,
+				ACEFD1A51D13437200B177BF /* LaunchScreenViewController.swift in Sources */,
+				ACEFD1A21D13435F00B177BF /* SetupRolesViewController.swift in Sources */,
+				ACEFD14F1D1342DE00B177BF /* NSDateExtension.swift in Sources */,
+				ACEFD1491D1342DE00B177BF /* UserController.swift in Sources */,
+				ACEFD1821D1342ED00B177BF /* NewGoalTableViewCell.swift in Sources */,
+				ACEFD1711D1342ED00B177BF /* LoadingViewController.swift in Sources */,
+				ACEFD1511D1342DE00B177BF /* DigitsController.swift in Sources */,
+				ACEFD1851D1342ED00B177BF /* DailyMarkTableViewCell.swift in Sources */,
+				ACEFD17F1D1342ED00B177BF /* WeekOverviewTableViewCell.swift in Sources */,
+				ACEFD1721D1342ED00B177BF /* SignUpViewController.swift in Sources */,
+				ACEFD1471D1342DE00B177BF /* FirebaseController.swift in Sources */,
+				ACEFD19E1D13435F00B177BF /* OnboadingQuoteViewController.swift in Sources */,
+				ACEFD1A01D13435F00B177BF /* OnboardingQuotePageViewController.swift in Sources */,
+				ACEFD1321D13425D00B177BF /* AppDelegate.swift in Sources */,
+				ACEFD1861D1342ED00B177BF /* WeekTableViewCell.swift in Sources */,
+				ACEFD1461D1342DE00B177BF /* AppearanceController.swift in Sources */,
+				ACEFD1891D1342ED00B177BF /* NotificationsListTableViewController.swift in Sources */,
+				ACEFD1841D1342ED00B177BF /* GoalOverviewTableViewCell.swift in Sources */,
+				ACEFD1791D1342ED00B177BF /* PersonalInformationViewController.swift in Sources */,
+				ACEFD1481D1342DE00B177BF /* DateController.swift in Sources */,
+				ACEFD1A31D13435F00B177BF /* RoleTableViewCell.swift in Sources */,
+				ACEFD1831D1342ED00B177BF /* AccountabilityRequestTableViewCell.swift in Sources */,
+				ACEFD1931D13431500B177BF /* User.swift in Sources */,
+				ACEFD17A1D1342ED00B177BF /* EditTableViewController.swift in Sources */,
+				ACEFD1451D1342DE00B177BF /* GFRTabBarController.swift in Sources */,
+				ACEFD14C1D1342DE00B177BF /* NotificationController.swift in Sources */,
+				ACEFD1881D1342ED00B177BF /* PickerViewTableViewCell.swift in Sources */,
+				ACEFD14B1D1342DE00B177BF /* GoalController.swift in Sources */,
+				ACEFD1911D13431500B177BF /* WeekdayButton.swift in Sources */,
+				ACEFD1781D1342ED00B177BF /* SettingsViewController.swift in Sources */,
+				ACEFD1951D13431500B177BF /* Goal.swift in Sources */,
+				ACEFD17C1D1342ED00B177BF /* NewGoalButtonTableViewCell.swift in Sources */,
+				ACEFD14A1D1342DE00B177BF /* RoleController.swift in Sources */,
+				ACEFD14E1D1342DE00B177BF /* StringExtension.swift in Sources */,
+				ACEFD17B1D1342ED00B177BF /* NewRoleGoalViewController.swift in Sources */,
+				ACEFD1871D1342ED00B177BF /* EditGoalTableViewCell.swift in Sources */,
+				ACEFD1701D1342ED00B177BF /* GiftViewController.swift in Sources */,
+				ACEFD14D1D1342DE00B177BF /* ColorExtension.swift in Sources */,
+				ACEFD1741D1342ED00B177BF /* WeekViewController.swift in Sources */,
+				ACEFD1801D1342ED00B177BF /* PersonalInformationTableViewCell.swift in Sources */,
+				ACEFD1811D1342ED00B177BF /* NewRoleTableViewCell.swift in Sources */,
+				ACEFD1A11D13435F00B177BF /* PagingViewController.swift in Sources */,
+				ACEFD1941D13431500B177BF /* Role.swift in Sources */,
+				ACEFD1731D1342ED00B177BF /* DayViewController.swift in Sources */,
+				ACEFD1771D1342ED00B177BF /* AccountabilityViewController.swift in Sources */,
+				ACEFD17D1D1342ED00B177BF /* HeaderView.swift in Sources */,
+				ACEFD18A1D1342ED00B177BF /* SelectDimensionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +643,6 @@
 			targetProxy = ACEFD11A1D1341ED00B177BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		ACEFD1011D1341ED00B177BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACEFD1021D1341ED00B177BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ACEFD1061D1341ED00B177BF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACEFD1071D1341ED00B177BF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ACEFD1201D1341ED00B177BF /* Debug */ = {
@@ -401,10 +734,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bricks/Bricks.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bricks",
+				);
 				INFOPLIST_FILE = Bricks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWork.Bricks;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bricks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWorks.Bricks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bricks/Bricks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +758,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bricks/Bricks.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bricks",
+				);
 				INFOPLIST_FILE = Bricks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWork.Bricks;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bricks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWorks.Bricks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bricks/Bricks-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +842,7 @@
 				ACEFD1241D1341ED00B177BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACEFD1251D1341ED00B177BF /* Build configuration list for PBXNativeTarget "BricksTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +851,7 @@
 				ACEFD1271D1341ED00B177BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACEFD1281D1341ED00B177BF /* Build configuration list for PBXNativeTarget "BricksUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +860,7 @@
 				ACEFD12A1D1341ED00B177BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

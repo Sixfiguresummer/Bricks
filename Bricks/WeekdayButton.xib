@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WeekdayButton" customModule="GoalsForRoles" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uncheckedBox" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-u1-2XK">
+                    <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-V3-e06">
+                    <rect key="frame" x="2" y="2" width="33" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Vn9-V3-e06" secondAttribute="height" multiplier="1:1" id="pUE-4a-Eb7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                    <state key="normal" title="S">
+                        <color key="titleColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ca5-cg-yNy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vn9-V3-e06" secondAttribute="bottom" id="28c-nR-DuE"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3ie-BQ-r76"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7ge-Hr-gXR"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7n6-nG-HaS"/>
+                <constraint firstAttribute="trailing" secondItem="Vn9-V3-e06" secondAttribute="trailing" id="CeH-rF-YOB"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OSx-xd-7XM"/>
+                <constraint firstItem="8Bt-u1-2XK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PuO-hX-3WN"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZPg-aZ-YGe"/>
+                <constraint firstAttribute="trailing" secondItem="8Bt-u1-2XK" secondAttribute="trailing" id="Zx2-dv-RDm"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jQW-hW-rOF"/>
+                <constraint firstItem="8Bt-u1-2XK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="owb-Qk-mh1"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="width" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="width" id="t00-Tk-22K"/>
+                <constraint firstAttribute="bottom" secondItem="8Bt-u1-2XK" secondAttribute="bottom" id="taO-2Z-MkF"/>
+                <constraint firstItem="Vn9-V3-e06" firstAttribute="height" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="height" id="yJJ-mG-WOQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="28c-nR-DuE"/>
+                    <exclude reference="7ge-Hr-gXR"/>
+                    <exclude reference="7n6-nG-HaS"/>
+                    <exclude reference="CeH-rF-YOB"/>
+                    <exclude reference="OSx-xd-7XM"/>
+                    <exclude reference="jQW-hW-rOF"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="button" destination="Vn9-V3-e06" id="Gxk-tC-Fv9"/>
+                <outlet property="imageView" destination="8Bt-u1-2XK" id="V1q-3d-7fI"/>
+            </connections>
+            <point key="canvasLocation" x="175" y="191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="uncheckedBox" width="46" height="46"/>
+    </resources>
+</document>
