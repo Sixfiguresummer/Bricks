@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AC6665CA1D3ACD24003DFEA2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6665C91D3ACD24003DFEA2 /* CloudKit.framework */; };
+		AC6CDF991D68ADA600D0EC53 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CDF951D68ADA600D0EC53 /* Fabric.framework */; };
+		AC6CDF9A1D68ADA600D0EC53 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CDF961D68ADA600D0EC53 /* DigitsKit.framework */; };
+		AC6CDF9B1D68ADA600D0EC53 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC6CDF971D68ADA600D0EC53 /* DigitsKitResources.bundle */; };
+		AC6CDF9C1D68ADA600D0EC53 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CDF981D68ADA600D0EC53 /* TwitterCore.framework */; };
 		ACEFD1131D1341ED00B177BF /* BricksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1121D1341ED00B177BF /* BricksTests.swift */; };
 		ACEFD11E1D1341ED00B177BF /* BricksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD11D1D1341ED00B177BF /* BricksUITests.swift */; };
 		ACEFD1321D13425D00B177BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD12F1D13425D00B177BF /* AppDelegate.swift */; };
@@ -66,10 +70,6 @@
 		ACEFD1A31D13435F00B177BF /* RoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD19D1D13435F00B177BF /* RoleTableViewCell.swift */; };
 		ACEFD1A51D13437200B177BF /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1A41D13437200B177BF /* LaunchScreenViewController.swift */; };
 		ACEFD1A71D13437B00B177BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1A61D13437B00B177BF /* LaunchScreen.storyboard */; };
-		ACEFD20A1D1347ED00B177BF /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2061D1347ED00B177BF /* Fabric.framework */; };
-		ACEFD20B1D1347ED00B177BF /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2071D1347ED00B177BF /* DigitsKit.framework */; };
-		ACEFD20C1D1347ED00B177BF /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD2081D1347ED00B177BF /* DigitsKitResources.bundle */; };
-		ACEFD20D1D1347ED00B177BF /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2091D1347ED00B177BF /* TwitterCore.framework */; };
 		ACEFD2211D13484D00B177BF /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD21B1D13484D00B177BF /* Firebase.framework */; };
 		ACEFD2251D13484D00B177BF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD21F1D13484D00B177BF /* libc++.tbd */; };
 		ACEFD2261D13484D00B177BF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD2201D13484D00B177BF /* libicucore.tbd */; };
@@ -97,6 +97,10 @@
 
 /* Begin PBXFileReference section */
 		AC6665C91D3ACD24003DFEA2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AC6CDF951D68ADA600D0EC53 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		AC6CDF961D68ADA600D0EC53 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		AC6CDF971D68ADA600D0EC53 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DigitsKitResources.bundle; sourceTree = "<group>"; };
+		AC6CDF981D68ADA600D0EC53 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		ACEFD0FA1D1341ED00B177BF /* Bricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEFD1091D1341ED00B177BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEFD10E1D1341ED00B177BF /* BricksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BricksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,10 +167,6 @@
 		ACEFD19D1D13435F00B177BF /* RoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleTableViewCell.swift; sourceTree = "<group>"; };
 		ACEFD1A41D13437200B177BF /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		ACEFD1A61D13437B00B177BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ACEFD2061D1347ED00B177BF /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		ACEFD2071D1347ED00B177BF /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
-		ACEFD2081D1347ED00B177BF /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DigitsKitResources.bundle; sourceTree = "<group>"; };
-		ACEFD2091D1347ED00B177BF /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		ACEFD21B1D13484D00B177BF /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		ACEFD21F1D13484D00B177BF /* libc++.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = "libc++.tbd"; sourceTree = "<group>"; };
 		ACEFD2201D13484D00B177BF /* libicucore.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libicucore.tbd; sourceTree = "<group>"; };
@@ -180,13 +180,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6CDF9A1D68ADA600D0EC53 /* DigitsKit.framework in Frameworks */,
 				ACEFD22C1D13497800B177BF /* CFNetwork.framework in Frameworks */,
 				ACEFD22A1D13496500B177BF /* SystemConfiguration.framework in Frameworks */,
 				ACEFD2281D13495300B177BF /* Security.framework in Frameworks */,
-				ACEFD20A1D1347ED00B177BF /* Fabric.framework in Frameworks */,
-				ACEFD20B1D1347ED00B177BF /* DigitsKit.framework in Frameworks */,
+				AC6CDF991D68ADA600D0EC53 /* Fabric.framework in Frameworks */,
+				AC6CDF9C1D68ADA600D0EC53 /* TwitterCore.framework in Frameworks */,
 				AC6665CA1D3ACD24003DFEA2 /* CloudKit.framework in Frameworks */,
-				ACEFD20D1D1347ED00B177BF /* TwitterCore.framework in Frameworks */,
 				ACEFD2211D13484D00B177BF /* Firebase.framework in Frameworks */,
 				ACEFD2251D13484D00B177BF /* libc++.tbd in Frameworks */,
 				ACEFD2261D13484D00B177BF /* libicucore.tbd in Frameworks */,
@@ -391,10 +391,10 @@
 		ACEFD2051D1347E200B177BF /* Digits&Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				ACEFD2061D1347ED00B177BF /* Fabric.framework */,
-				ACEFD2071D1347ED00B177BF /* DigitsKit.framework */,
-				ACEFD2081D1347ED00B177BF /* DigitsKitResources.bundle */,
-				ACEFD2091D1347ED00B177BF /* TwitterCore.framework */,
+				AC6CDF951D68ADA600D0EC53 /* Fabric.framework */,
+				AC6CDF961D68ADA600D0EC53 /* DigitsKit.framework */,
+				AC6CDF971D68ADA600D0EC53 /* DigitsKitResources.bundle */,
+				AC6CDF981D68ADA600D0EC53 /* TwitterCore.framework */,
 			);
 			name = "Digits&Fabric";
 			sourceTree = "<group>";
@@ -470,6 +470,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = FRU4JR96G8;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -515,7 +518,7 @@
 			files = (
 				ACEFD1921D13431500B177BF /* WeekdayButton.xib in Resources */,
 				ACEFD17E1D1342ED00B177BF /* HeaderView.xib in Resources */,
-				ACEFD20C1D1347ED00B177BF /* DigitsKitResources.bundle in Resources */,
+				AC6CDF9B1D68ADA600D0EC53 /* DigitsKitResources.bundle in Resources */,
 				ACEFD1341D13425D00B177BF /* Assets.xcassets in Resources */,
 				ACEFD1A71D13437B00B177BF /* LaunchScreen.storyboard in Resources */,
 				ACEFD1331D13425D00B177BF /* Main.storyboard in Resources */,

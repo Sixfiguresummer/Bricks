@@ -16,6 +16,8 @@ framework module DigitsKit {
     header "DGTCompletionViewController.h"
     header "DGTContactAccessAuthorizationStatus.h"
     header "DGTContacts.h"
+    header "DGTContactsDebugConfiguration.h"
+    header "DGTContactsEventDelegate.h"
     header "DGTContactsUploadResult.h"
     header "DGTDebugConfiguration.h"
     header "DGTErrors.h"

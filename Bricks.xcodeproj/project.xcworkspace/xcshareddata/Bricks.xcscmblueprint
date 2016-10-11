@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7E9D17D1251EF41D4B53ECE80445BE3CDFE44D71",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7E9D17D1251EF41D4B53ECE80445BE3CDFE44D71" : 0,
+    "0A1A6DD2FC188A2D4565BE6DEC06C615D59D6BFA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75DF6189-5B1B-4C31-838F-28C5AFDC9FEB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7E9D17D1251EF41D4B53ECE80445BE3CDFE44D71" : "Bricks\/",
+    "0A1A6DD2FC188A2D4565BE6DEC06C615D59D6BFA" : "..\/Documents\/GoalsForRoles"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Bricks",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Bricks.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/patch-benjamin\/GoalsForRoles.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A1A6DD2FC188A2D4565BE6DEC06C615D59D6BFA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/patch-benjamin\/Bricks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7E9D17D1251EF41D4B53ECE80445BE3CDFE44D71"
+    }
+  ]
+}
