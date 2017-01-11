@@ -46,19 +46,19 @@ class OnboadingQuoteViewController: UIViewController {
 
 extension OnboadingQuoteViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return quoteImages.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier("QuoteCell", forIndexPath: indexPath) as? QuoteImageCollectionViewCell else { fatalError() }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuoteCell", for: indexPath) as? QuoteImageCollectionViewCell else { fatalError() }
         
-        cell.imageView.image = quoteImages[indexPath.item]
+        cell.imageView.image = quoteImages[(indexPath as NSIndexPath).item]
 
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = self.view.frame.size.width
         let height = width * (751/1335) // aspect ratio of  image.
         return CGSize(width: width, height: height)

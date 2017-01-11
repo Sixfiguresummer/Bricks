@@ -9,18 +9,18 @@
 import UIKit
 
 protocol WeekdayButtonDelegate {
-    func buttonTapped(weekdayButton: WeekdayButton)
+    func buttonTapped(_ weekdayButton: WeekdayButton)
 }
 
 class WeekdayButton: UIView {
     
     // MARK: Class Methods
     
-    class func makeForAllWeekdaysInWeek(week: (sunday: NSDate, saturday: NSDate), disableFutureDates: Bool = true, weekdaysApplicable: [Weekday] = Weekday.getAllWeekdays(), settingsEditMode: Bool = false, delegate: WeekdayButtonDelegate? = nil, goal: Goal?) -> [WeekdayButton] {
+    class func makeForAllWeekdaysInWeek(_ week: (sunday: Date, saturday: Date), disableFutureDates: Bool = true, weekdaysApplicable: [Weekday] = Weekday.getAllWeekdays(), settingsEditMode: Bool = false, delegate: WeekdayButtonDelegate? = nil, goal: Goal?) -> [WeekdayButton] {
         var weekdayButtons = [WeekdayButton]()
         
         for weekday in Weekday.getAllWeekdays() {
-            let date: NSDate = DateController.dateForDayOfWeek(weekday.rawValue, weekStartDate: week.sunday)
+            let date: Date = DateController.dateForDayOfWeek(weekday.rawValue, weekStartDate: week.sunday)
             let weekdayButton = WeekdayButton.make(date, disableIfFutureDate: disableFutureDates, weekdaysApplicable: weekdaysApplicable, settingsEditMode: settingsEditMode, delegate: delegate, goal: goal)
             weekdayButtons.append(weekdayButton)
         }
@@ -28,8 +28,8 @@ class WeekdayButton: UIView {
         return weekdayButtons
     }
     
-    class func make(date: NSDate, isSelected: Bool = false, disableIfFutureDate: Bool, weekdaysApplicable: [Weekday], settingsEditMode: Bool, delegate: WeekdayButtonDelegate? = nil, goal: Goal?) -> WeekdayButton {
-        guard let weekdayButton = NSBundle.mainBundle().loadNibNamed("WeekdayButton", owner: self, options: nil)[0] as? WeekdayButton else { fatalError() }
+    class func make(_ date: Date, isSelected: Bool = false, disableIfFutureDate: Bool, weekdaysApplicable: [Weekday], settingsEditMode: Bool, delegate: WeekdayButtonDelegate? = nil, goal: Goal?) -> WeekdayButton {
+        guard let weekdayButton = Bundle.main.loadNibNamed("WeekdayButton", owner: self, options: nil)?[0] as? WeekdayButton else { fatalError() }
         
         weekdayButton.setupButton(date, isSelected: isSelected, disableIfFutureDate: disableIfFutureDate, weekdaysApplicable: weekdaysApplicable, settingsEditMode: settingsEditMode, delegate: delegate, goal: goal)
         
@@ -39,8 +39,8 @@ class WeekdayButton: UIView {
     
     // MARK: - Outlets
     // private outlets to reduce confusion and from the button getting into a bad state.
-    @IBOutlet weak private var button: UIButton!
-    @IBOutlet weak private var imageView: UIImageView!
+    @IBOutlet weak fileprivate var button: UIButton!
+    @IBOutlet weak fileprivate var imageView: UIImageView!
     
     
     // MARK: - Variables
@@ -48,7 +48,7 @@ class WeekdayButton: UIView {
     var disableIfFutureDate = false
     var settingsEditMode = true
     var delegate: WeekdayButtonDelegate?
-    var date: NSDate = NSDate()
+    var date: Date = Date()
     var goal: Goal?
     var weekdaysApplicable = [Weekday]()
     var weekday: Weekday {
@@ -63,17 +63,17 @@ class WeekdayButton: UIView {
     var dateIsBeforeCreation: Bool {
         
         guard let goal = self.goal else { return false }
-        return !DateController.dateIsLaterThanDate(date, secondDate: goal.dateCreated)
+        return !DateController.dateIsLaterThanDate(date, secondDate: goal.dateCreated) && !DateController.dateEqualsDate(date, secondDate: goal.dateCreated)
         
     }
     
     // MARK: - Actions
-    @IBAction func buttonTapped(sender: UIButton) {
+    @IBAction func buttonTapped(_ sender: UIButton) {
         self.switchChecked()
     }
     
     // MARK: - Methods
-    func setupButton(date: NSDate, isSelected: Bool, disableIfFutureDate: Bool, weekdaysApplicable: [Weekday], settingsEditMode: Bool, delegate: WeekdayButtonDelegate?, goal: Goal?) {
+    func setupButton(_ date: Date, isSelected: Bool, disableIfFutureDate: Bool, weekdaysApplicable: [Weekday], settingsEditMode: Bool, delegate: WeekdayButtonDelegate?, goal: Goal?) {
         self.disableIfFutureDate = disableIfFutureDate
         self.settingsEditMode = settingsEditMode
         self.date = date
@@ -92,28 +92,28 @@ class WeekdayButton: UIView {
     }
     
     func disableButtonIfInFutureOrUnapplicable() {
-        self.button.hidden = false
-        self.imageView.hidden = false
+        self.button.isHidden = false
+        self.imageView.isHidden = false
         
         if (disableIfFutureDate && (dateIsInFuture || dateIsBeforeCreation)) || (!self.settingsEditMode && !weekdaysApplicable.contains(self.weekday)) {
             if disableIfFutureDate && dateIsInFuture {
-                self.button.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+                self.button.setTitleColor(UIColor.lightGray, for: UIControlState())
             } else if disableIfFutureDate && dateIsBeforeCreation {
-                self.button.hidden = true
-                self.imageView.hidden = true
+                self.button.isHidden = true
+                self.imageView.isHidden = true
             }
             assert(self.isSelected == false)
-            self.button.enabled = false
+            self.button.isEnabled = false
             self.imageView.alpha = 0
         } else {
-            self.button.enabled = true
-            self.button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+            self.button.isEnabled = true
+            self.button.setTitleColor(UIColor.black, for: UIControlState())
             self.imageView.alpha = 1.0
         }
         
     }
     
-    func switchChecked(isSelected: Bool? = nil) {
+    func switchChecked(_ isSelected: Bool? = nil) {
         
         self.isSelected = isSelected ?? !self.isSelected
         delegate?.buttonTapped(self)
@@ -121,17 +121,17 @@ class WeekdayButton: UIView {
     }
     
     func updateButtonAndImage() {
-        guard let unselectedImage = UIImage(named: "uncheckedBox"), selectedImage = UIImage(named: "checkedBox") else { fatalError() }
+        guard let unselectedImage = UIImage(named: "uncheckedBox"), let selectedImage = UIImage(named: "checkedBox") else { fatalError() }
         
         if isSelected {
             
             imageView.image = selectedImage
-            button.setTitle("", forState: .Normal)
+            button.setTitle("", for: UIControlState())
             
         } else {
             
             imageView.image = unselectedImage
-            button.setTitle(weekday.getInitialsString(), forState: .Normal)
+            button.setTitle(weekday.getInitialsString(), for: UIControlState())
             
         }
     }

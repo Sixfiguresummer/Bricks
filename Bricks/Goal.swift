@@ -22,21 +22,21 @@ class Goal: Equatable {
     var roleID: String
     var goalID: String
     var title: String
-    var datesCompleted: [NSDate] = [] // Place in a separate firebase section
+    var datesCompleted: [Date] = [] // Place in a separate firebase section
     var weekdaysApplicable: [Weekday]
-    var dateCreated: NSDate
-    var dateDeleted: NSDate?
+    var dateCreated: Date
+    var dateDeleted: Date?
     
-    static var dateConverterFormatter : NSDateFormatter {
-        
-        let formatter = NSDateFormatter()
-        formatter.dateStyle = .FullStyle
-        formatter.timeStyle = .FullStyle
-        
-        return formatter
-    }
+//    static var dateConverterFormatter : DateFormatter {
+//        
+//        let formatter = DateFormatter()
+//        formatter.dateStyle = .full
+//        formatter.timeStyle = .full
+//        
+//        return formatter
+//    }
     
-    init(roleID: String = "", goalID: String = "", title: String, datesCompleted: [NSDate], dateCreated: NSDate = NSDate(), dateDeleted: NSDate? = nil, weekdaysApplicable: [Weekday] = Weekday.getAllWeekdays()) {
+    init(roleID: String = "", goalID: String = "", title: String, datesCompleted: [Date], dateCreated: Date = Date(), dateDeleted: Date? = nil, weekdaysApplicable: [Weekday] = Weekday.getAllWeekdays()) {
         self.roleID = roleID
         self.goalID = goalID
         self.title = title
@@ -61,22 +61,22 @@ class Goal: Equatable {
             weekdaysApplicable = Weekday.getAllWeekdays() // default value for pre-weekdaysApplicable Goals in the database
         }
         
-        var dates: [NSDate] = []
+        var dates: [Date] = []
         
         if let datesCompletedStrings = dictionary[Goal.kDatesCompleted] as? [String] {
             dates = Goal.stringsToDates(datesCompletedStrings)
         }
         
         
-        let dateCreated: NSDate
+        let dateCreated: Date
         
-        if let dateCreatedString = dictionary[Goal.kDateCreated] as? String, let convertedDateCreated: NSDate = dateCreatedString.dateValue {
+        if let dateCreatedString = dictionary[Goal.kDateCreated] as? String, let convertedDateCreated: Date = dateCreatedString.dateValue as Date? {
             dateCreated = convertedDateCreated
         } else {
             // default value for pre-dateCreated Goals in the database
             
             if dates.count == 0 {
-                dateCreated = NSDate()
+                dateCreated = Date()
             }
             else {
                 
@@ -95,9 +95,9 @@ class Goal: Equatable {
             
         }
         
-        var dateDeleted: NSDate? = nil
-        if let stringDateDeleted = dictionary[Goal.kDateDeleted] as? String, convertedDateDeleted = stringDateDeleted.dateValue {
-            dateDeleted = convertedDateDeleted
+        var dateDeleted: Date? = nil
+        if let stringDateDeleted = dictionary[Goal.kDateDeleted] as? String, let convertedDateDeleted = stringDateDeleted.dateValue {
+            dateDeleted = convertedDateDeleted as Date
         }
         
         self.init(roleID: roleID, goalID: goalID, title: title, datesCompleted: dates, dateCreated: dateCreated, dateDeleted: dateDeleted, weekdaysApplicable: weekdaysApplicable)
@@ -106,18 +106,19 @@ class Goal: Equatable {
     /**
      Gets the weekdaysApplicable that are after the dateCreated and before the dateDeleted.
      */
-    func weekdaysApplicable(week: (sunday: NSDate, saturday: NSDate) = DateController.weekOfDate()) -> [Weekday] {
+//    1.	While emitting SIL for 'weekdaysApplicable' at /Users/benpatch/Desktop/Bricks/Bricks/Goal.swift:109:5
+    func weekdaysApplicable(_ week: (sunday: Date, saturday: Date) = DateController.weekOfDate()) -> [Weekday] {
         var weekdaysValid = [Weekday]()
-        for date in self.weekdatesApplicable() {
+        for date in self.weekdatesApplicable(DateController.weekOfDate()) {
             guard let weekday = Weekday(rawValue: DateController.dayOfWeek(date)) else { fatalError() }
             weekdaysValid.append(weekday)
         }
         return weekdaysValid
     }
 
-    func validWeekdaysApplicable(week: (sunday: NSDate, saturday: NSDate) = DateController.weekOfDate()) -> [Weekday] {
+    func validWeekdaysApplicable(_ week: (sunday: Date, saturday: Date) = DateController.weekOfDate()) -> [Weekday] {
         var validWeekdaysApplicable = [Weekday]()
-        guard let weekdayToday = Weekday(rawValue: DateController.dayOfWeek(NSDate())) else { fatalError() }
+        guard let weekdayToday = Weekday(rawValue: DateController.dayOfWeek(Date())) else { fatalError() }
         for weekday in weekdaysApplicable(week) {
             if weekday.rawValue <= weekdayToday.rawValue {
                 validWeekdaysApplicable.append(weekday)
@@ -127,15 +128,15 @@ class Goal: Equatable {
     }
     
     /** Returns the valid dates in a week that are after/on the creation date, before/on the deletion date, and that are not in the future. */
-    func validWeekdatesApplicable(week: (sunday: NSDate, saturday: NSDate) = DateController.weekOfDate(), excludeFutureDates: Bool = true) -> [NSDate] {
+    func validWeekdatesApplicable(_ week: (sunday: Date, saturday: Date) = DateController.weekOfDate(), excludeFutureDates: Bool = true) -> [Date] {
 
         guard excludeFutureDates else {
             return weekdatesApplicable(week)
         }
         
-        var validWeekdatesApplicable = [NSDate]()
+        var validWeekdatesApplicable = [Date]()
         for date in weekdatesApplicable(week) {
-            if DateController.dateIsLaterThanDate(NSDate(), secondDate: date) || DateController.dateEqualsDate(date) {
+            if DateController.dateIsLaterThanDate(Date(), secondDate: date) || DateController.dateEqualsDate(date) {
                 validWeekdatesApplicable.append(date)
             }
         }
@@ -173,9 +174,9 @@ class Goal: Equatable {
     /**
      Gets the weekdaysApplicable that are after the dateCreated and before the dateDeleted.
      */
-    func weekdatesApplicable(week: (sunday: NSDate, saturday: NSDate) = DateController.weekOfDate()) -> [NSDate] {
+    func weekdatesApplicable(_ week: (sunday: Date, saturday: Date)) -> [Date] {
         
-        var weekdatesApplicable = [NSDate]()
+        var weekdatesApplicable = [Date]()
         for weekday in self.weekdaysApplicable {
             let date = DateController.dateForDayOfWeek(weekday.rawValue, weekStartDate: week.sunday)
             if DateController.dateIsLaterThanDate(date, secondDate: self.dateCreated) || DateController.dateEqualsDate(date, secondDate: self.dateCreated) {
@@ -196,14 +197,15 @@ class Goal: Equatable {
         return weekdatesApplicable
     }
 
+    
     /** Converts an array of Strings in the correct format into an array of NSDates */
-    static func stringsToDates(dateStrings: [String]) -> [NSDate] {
+    static func stringsToDates(_ dateStrings: [String]) -> [Date] {
         
-        var dates: [NSDate] = []
+        var dates: [Date] = []
         
         dateStrings.forEach({ (dateString) -> () in
             
-            dates.append(Goal.dateConverterFormatter.dateFromString(dateString)!)
+            dates.append(Date.DateConversionFormatter.date(from: dateString)!)
             
         })
         
@@ -211,14 +213,14 @@ class Goal: Equatable {
     }
     
     /** Converts an array of NSDate objects into an array of Strings */
-    static func datesToStrings(dates: [NSDate]) -> [String] {
+    static func datesToStrings(_ dates: [Date]) -> [String] {
         
-        let formatter = Goal.dateConverterFormatter
+        let formatter = Date.DateConversionFormatter
         
         var stringDates = [String]()
         
         dates.forEach { (date) -> () in
-            stringDates.append(formatter.stringFromDate(date))
+            stringDates.append(formatter.string(from: date))
         }
         
         return stringDates
@@ -231,16 +233,16 @@ class Goal: Equatable {
     func toDictionary() -> [String: AnyObject] {
         
         var dictionary: [String: AnyObject] = [
-            Goal.kRoleID : self.roleID,
-            Goal.kGoalID : self.goalID,
-            Goal.kTitle : self.title,
-            Goal.kDatesCompleted : Goal.datesToStrings(self.datesCompleted),
-            Goal.kDateCreated : self.dateCreated.stringValue(),
-            Goal.kWeekdaysApplicable : Weekday.convertWeekdaysToInts(self.weekdaysApplicable)
+            Goal.kRoleID : self.roleID as AnyObject,
+            Goal.kGoalID : self.goalID as AnyObject,
+            Goal.kTitle : self.title as AnyObject,
+            Goal.kDatesCompleted : Goal.datesToStrings(self.datesCompleted) as AnyObject,
+            Goal.kDateCreated : self.dateCreated.stringValue() as AnyObject,
+            Goal.kWeekdaysApplicable : Weekday.convertWeekdaysToInts(self.weekdaysApplicable) as AnyObject
         ]
         
         if let dateDeleted = self.dateDeleted {
-            dictionary[Goal.kDateDeleted] = dateDeleted.stringValue()
+            dictionary[Goal.kDateDeleted] = dateDeleted.stringValue() as AnyObject?
         }
         
         return dictionary
@@ -254,22 +256,22 @@ class Goal: Equatable {
             return
         }
         
-        var firebaseEndpoint = FirebaseController.base.childByAppendingPath(Goal.endpoint)
+        var firebaseEndpoint = FirebaseController.base?.child(byAppendingPath: Goal.endpoint)
         
         guard role.roleID != ""  else { print("Cannot save Goal with no RoleID"); return }
         
         if roleID == "" { roleID = role.roleID }
         
-        firebaseEndpoint = firebaseEndpoint.childByAppendingPath(roleID)
+        firebaseEndpoint = firebaseEndpoint?.child(byAppendingPath: roleID)
         
         if goalID == "" {
-            firebaseEndpoint = firebaseEndpoint.childByAutoId()
-            goalID = firebaseEndpoint.key
+            firebaseEndpoint = firebaseEndpoint?.childByAutoId()
+            goalID = (firebaseEndpoint?.key)!
         } else {
-            firebaseEndpoint = firebaseEndpoint.childByAppendingPath(goalID)
+            firebaseEndpoint = firebaseEndpoint?.child(byAppendingPath: goalID)
         }
         
-        firebaseEndpoint.updateChildValues(toDictionary())
+        firebaseEndpoint?.updateChildValues(toDictionary())
         
     }
     

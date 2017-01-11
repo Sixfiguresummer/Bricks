@@ -12,8 +12,6 @@
 		AC6CDF9A1D68ADA600D0EC53 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CDF961D68ADA600D0EC53 /* DigitsKit.framework */; };
 		AC6CDF9B1D68ADA600D0EC53 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC6CDF971D68ADA600D0EC53 /* DigitsKitResources.bundle */; };
 		AC6CDF9C1D68ADA600D0EC53 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CDF981D68ADA600D0EC53 /* TwitterCore.framework */; };
-		ACEFD1131D1341ED00B177BF /* BricksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD1121D1341ED00B177BF /* BricksTests.swift */; };
-		ACEFD11E1D1341ED00B177BF /* BricksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD11D1D1341ED00B177BF /* BricksUITests.swift */; };
 		ACEFD1321D13425D00B177BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFD12F1D13425D00B177BF /* AppDelegate.swift */; };
 		ACEFD1331D13425D00B177BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1301D13425D00B177BF /* Main.storyboard */; };
 		ACEFD1341D13425D00B177BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEFD1311D13425D00B177BF /* Assets.xcassets */; };
@@ -78,23 +76,6 @@
 		ACEFD22C1D13497800B177BF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEFD22B1D13497800B177BF /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		ACEFD10F1D1341ED00B177BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACEFD0F21D1341ED00B177BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACEFD0F91D1341ED00B177BF;
-			remoteInfo = Bricks;
-		};
-		ACEFD11A1D1341ED00B177BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACEFD0F21D1341ED00B177BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACEFD0F91D1341ED00B177BF;
-			remoteInfo = Bricks;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		AC6665C91D3ACD24003DFEA2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AC6CDF951D68ADA600D0EC53 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -103,10 +84,8 @@
 		AC6CDF981D68ADA600D0EC53 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		ACEFD0FA1D1341ED00B177BF /* Bricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEFD1091D1341ED00B177BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACEFD10E1D1341ED00B177BF /* BricksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BricksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEFD1121D1341ED00B177BF /* BricksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BricksTests.swift; sourceTree = "<group>"; };
 		ACEFD1141D1341ED00B177BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACEFD1191D1341ED00B177BF /* BricksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BricksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEFD11D1D1341ED00B177BF /* BricksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BricksUITests.swift; sourceTree = "<group>"; };
 		ACEFD11F1D1341ED00B177BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEFD12B1D13420700B177BF /* Bricks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bricks.entitlements; sourceTree = "<group>"; };
@@ -193,20 +172,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACEFD10B1D1341ED00B177BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACEFD1161D1341ED00B177BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -225,8 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				ACEFD0FA1D1341ED00B177BF /* Bricks.app */,
-				ACEFD10E1D1341ED00B177BF /* BricksTests.xctest */,
-				ACEFD1191D1341ED00B177BF /* BricksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -420,42 +383,6 @@
 			productReference = ACEFD0FA1D1341ED00B177BF /* Bricks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ACEFD10D1D1341ED00B177BF /* BricksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACEFD1251D1341ED00B177BF /* Build configuration list for PBXNativeTarget "BricksTests" */;
-			buildPhases = (
-				ACEFD10A1D1341ED00B177BF /* Sources */,
-				ACEFD10B1D1341ED00B177BF /* Frameworks */,
-				ACEFD10C1D1341ED00B177BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACEFD1101D1341ED00B177BF /* PBXTargetDependency */,
-			);
-			name = BricksTests;
-			productName = BricksTests;
-			productReference = ACEFD10E1D1341ED00B177BF /* BricksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ACEFD1181D1341ED00B177BF /* BricksUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACEFD1281D1341ED00B177BF /* Build configuration list for PBXNativeTarget "BricksUITests" */;
-			buildPhases = (
-				ACEFD1151D1341ED00B177BF /* Sources */,
-				ACEFD1161D1341ED00B177BF /* Frameworks */,
-				ACEFD1171D1341ED00B177BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACEFD11B1D1341ED00B177BF /* PBXTargetDependency */,
-			);
-			name = BricksUITests;
-			productName = BricksUITests;
-			productReference = ACEFD1191D1341ED00B177BF /* BricksUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -469,6 +396,7 @@
 					ACEFD0F91D1341ED00B177BF = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = FRU4JR96G8;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -480,14 +408,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					ACEFD10D1D1341ED00B177BF = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = ACEFD0F91D1341ED00B177BF;
-					};
-					ACEFD1181D1341ED00B177BF = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = ACEFD0F91D1341ED00B177BF;
 					};
 				};
 			};
@@ -505,8 +425,6 @@
 			projectRoot = "";
 			targets = (
 				ACEFD0F91D1341ED00B177BF /* Bricks */,
-				ACEFD10D1D1341ED00B177BF /* BricksTests */,
-				ACEFD1181D1341ED00B177BF /* BricksUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -522,20 +440,6 @@
 				ACEFD1341D13425D00B177BF /* Assets.xcassets in Resources */,
 				ACEFD1A71D13437B00B177BF /* LaunchScreen.storyboard in Resources */,
 				ACEFD1331D13425D00B177BF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACEFD10C1D1341ED00B177BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACEFD1171D1341ED00B177BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,36 +520,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACEFD10A1D1341ED00B177BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACEFD1131D1341ED00B177BF /* BricksTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACEFD1151D1341ED00B177BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACEFD11E1D1341ED00B177BF /* BricksUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ACEFD1101D1341ED00B177BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACEFD0F91D1341ED00B177BF /* Bricks */;
-			targetProxy = ACEFD10F1D1341ED00B177BF /* PBXContainerItemProxy */;
-		};
-		ACEFD11B1D1341ED00B177BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACEFD0F91D1341ED00B177BF /* Bricks */;
-			targetProxy = ACEFD11A1D1341ED00B177BF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ACEFD1201D1341ED00B177BF /* Debug */ = {
@@ -745,6 +620,7 @@
 					"$(PROJECT_DIR)/Bricks",
 				);
 				INFOPLIST_FILE = Bricks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -754,6 +630,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bricks/Bricks-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -769,6 +646,7 @@
 					"$(PROJECT_DIR)/Bricks",
 				);
 				INFOPLIST_FILE = Bricks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -777,52 +655,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWorks.Bricks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bricks/Bricks-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		ACEFD1261D1341ED00B177BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BricksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWork.BricksTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bricks.app/Bricks";
-			};
-			name = Debug;
-		};
-		ACEFD1271D1341ED00B177BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BricksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWork.BricksTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bricks.app/Bricks";
-			};
-			name = Release;
-		};
-		ACEFD1291D1341ED00B177BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = BricksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWork.BricksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Bricks;
-			};
-			name = Debug;
-		};
-		ACEFD12A1D1341ED00B177BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = BricksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWork.BricksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Bricks;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -843,24 +676,6 @@
 			buildConfigurations = (
 				ACEFD1231D1341ED00B177BF /* Debug */,
 				ACEFD1241D1341ED00B177BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACEFD1251D1341ED00B177BF /* Build configuration list for PBXNativeTarget "BricksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACEFD1261D1341ED00B177BF /* Debug */,
-				ACEFD1271D1341ED00B177BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACEFD1281D1341ED00B177BF /* Build configuration list for PBXNativeTarget "BricksUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACEFD1291D1341ED00B177BF /* Debug */,
-				ACEFD12A1D1341ED00B177BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

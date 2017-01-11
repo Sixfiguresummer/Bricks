@@ -10,9 +10,9 @@ import Foundation
 
 enum AccountabilityStatus: Int {
     
-    case Pending = 0,
-    Accepted = 1,
-    Denied = 2
+    case pending = 0,
+    accepted = 1,
+    denied = 2
     
 }
 
@@ -41,15 +41,15 @@ class Role: Equatable {
     var accountorName: String?
     var roleID: String
     var accountabilityStatus: AccountabilityStatus
-    var dateCreated: NSDate
-    var dateDeleted: NSDate?
+    var dateCreated: Date
+    var dateDeleted: Date?
     var goals: [Goal]
     var allGoals: [Goal] {
         return self.goals
     }
 
     
-  init(userID: String = UserController.sharedInstance.currentUser.userID, accountorID: String? = nil, accountorName: String? = "", name: String, goals: [Goal] = [], roleID: String = "", accountabilityStatus: AccountabilityStatus = AccountabilityStatus.Denied, dateCreated: NSDate = NSDate(), dateDeleted: NSDate? = nil) {
+  init(userID: String = UserController.sharedInstance.currentUser.userID, accountorID: String? = nil, accountorName: String? = "", name: String, goals: [Goal] = [], roleID: String = "", accountabilityStatus: AccountabilityStatus = AccountabilityStatus.denied, dateCreated: Date = Date(), dateDeleted: Date? = nil) {
         self.name = name
         self.userID = userID
         self.goals = goals
@@ -75,17 +75,17 @@ class Role: Equatable {
             accountabilityStatus = status
         }
         // DateCreated
-        let dateCreated: NSDate
+        let dateCreated: Date
         if let dateCreatedString = dictionary[Role.kDateCreated] as? String {
-            dateCreated = dateCreatedString.dateValue!
+            dateCreated = dateCreatedString.dateValue! as Date
         } else {
-            dateCreated = NSDate()
+            dateCreated = Date()
         }
       
-      var dateDeleted: NSDate? = nil
+      var dateDeleted: Date? = nil
       
-      if let stringDateDeleted = dictionary[Role.kDateDeleted] as? String, convertedDateDeleted = stringDateDeleted.dateValue {
-        dateDeleted = convertedDateDeleted
+      if let stringDateDeleted = dictionary[Role.kDateDeleted] as? String, let convertedDateDeleted = stringDateDeleted.dateValue {
+        dateDeleted = convertedDateDeleted as Date
       }
       
         // AccountorID
@@ -104,20 +104,20 @@ class Role: Equatable {
     func toDictionary() -> [String: AnyObject] {
         
         var dictionary: [String: AnyObject] = [
-            Role.kName : self.name,
-            Role.kUserID : self.userID,
-            Role.kRoleID : self.roleID,
-            Role.kAccountabilityStatus : self.accountabilityStatus.rawValue,
-            Role.kDateCreated : self.dateCreated.stringValue()
+            Role.kName : self.name as AnyObject,
+            Role.kUserID : self.userID as AnyObject,
+            Role.kRoleID : self.roleID as AnyObject,
+            Role.kAccountabilityStatus : self.accountabilityStatus.rawValue as AnyObject,
+            Role.kDateCreated : self.dateCreated.stringValue() as AnyObject
         ]
         
         if let accountorID = self.accountorID, let accountorName = self.accountorName {
-            dictionary.updateValue(accountorID, forKey: Role.kAccountorID)
-            dictionary.updateValue(accountorName, forKey: Role.kAccountorName)
+            dictionary.updateValue(accountorID as AnyObject, forKey: Role.kAccountorID)
+            dictionary.updateValue(accountorName as AnyObject, forKey: Role.kAccountorName)
         }
       
       if let dateDeleted = self.dateDeleted {
-        dictionary[Role.kDateDeleted] = dateDeleted.stringValue()
+        dictionary[Role.kDateDeleted] = dateDeleted.stringValue() as AnyObject?
       }
         
         return dictionary
@@ -126,22 +126,22 @@ class Role: Equatable {
     
     func save() {
         
-        var firebaseEndpoint = FirebaseController.base.childByAppendingPath(Role.endPointSimple)
+        var firebaseEndpoint = FirebaseController.base?.child(byAppendingPath: Role.endPointSimple)
         
         guard UserController.userID != ""  else { print("Cannot save Role with no UserID"); return }
         
         if userID == "" { userID = UserController.userID }
         
-        firebaseEndpoint = firebaseEndpoint.childByAppendingPath(userID)
+        firebaseEndpoint = firebaseEndpoint?.child(byAppendingPath: userID)
         
         if roleID == "" {
-            firebaseEndpoint = firebaseEndpoint.childByAutoId()
-            roleID = firebaseEndpoint.key
+            firebaseEndpoint = firebaseEndpoint?.childByAutoId()
+            roleID = (firebaseEndpoint?.key)!
         } else {
-            firebaseEndpoint = firebaseEndpoint.childByAppendingPath(roleID)
+            firebaseEndpoint = firebaseEndpoint?.child(byAppendingPath: roleID)
         }
         
-        firebaseEndpoint.updateChildValues(toDictionary())
+        firebaseEndpoint?.updateChildValues(toDictionary())
         
         goals.forEach { (goal) -> () in
             goal.save()
@@ -150,11 +150,11 @@ class Role: Equatable {
     }
     
     
-    func addGoal(goal: Goal) {
+    func addGoal(_ goal: Goal) {
         self.goals.append(goal)
     }
     
-    func getValidGoalsForWeek(week: (firstDay: NSDate, lastDay: NSDate)) -> [Goal]? {
+    func getValidGoalsForWeek(_ week: (firstDay: Date, lastDay: Date)) -> [Goal]? {
         
         var existingGoals: [Goal]? = nil
         
@@ -180,15 +180,15 @@ class Role: Equatable {
         return existingGoals
     }
     
-    func getValidGoalsForWeekStartingOnDate(startDate: NSDate) -> [Goal]? {
+    func getValidGoalsForWeekStartingOnDate(_ startDate: Date) -> [Goal]? {
         let week = DateController.weekStartingOnDate(startDate)
         return getValidGoalsForWeek(week)
     }
     
-    func getValidGoalsForDate(date: NSDate = NSDate()) -> [Goal]? {
+    func getValidGoalsForDate(_ date: Date = Date()) -> [Goal]? {
         var goalsForDate: [Goal]? = nil
         for goal in allGoals {
-            guard let weekday = Weekday(rawValue: DateController.dayOfWeek(date)) where goal.weekdaysApplicable.contains(weekday) else { continue }
+            guard let weekday = Weekday(rawValue: DateController.dayOfWeek(date)) , goal.weekdaysApplicable.contains(weekday) else { continue }
             if !DateController.dateIsLaterThanDate(goal.dateCreated, secondDate: date) || DateController.dateEqualsDate(goal.dateCreated, secondDate: date) {
                 guard let dateDeleted = goal.dateDeleted else {
                     if goalsForDate != nil  {
@@ -210,7 +210,7 @@ class Role: Equatable {
         return goalsForDate
     }
         
-    func setGoals(goals: [Goal]) {
+    func setGoals(_ goals: [Goal]) {
         self.goals = goals
     }
     

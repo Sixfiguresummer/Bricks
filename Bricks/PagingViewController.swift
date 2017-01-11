@@ -14,7 +14,7 @@ class PagingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        doneButton.hidden = true
+        doneButton.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,39 +35,39 @@ class PagingViewController: UIViewController {
     
     var superViewController: UIViewController?
     
-    @IBAction func doneButtonTapped(sender: AnyObject) {
+    @IBAction func doneButtonTapped(_ sender: AnyObject) {
         finishWindow()
     }
     
-    @IBAction func skipButtonTapped(sender: AnyObject) {
+    @IBAction func skipButtonTapped(_ sender: AnyObject) {
         finishWindow()
     }
     
     func finishWindow() {
         if isTutorial {
             
-            guard let signUpVC = self.storyboard?.instantiateViewControllerWithIdentifier("SignUpViewController") as? SignUpViewController else { fatalError() }
+            guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController else { fatalError() }
             signUpVC.dayViewController = self.dayViewController
-            self.presentViewController(signUpVC, animated: true, completion: nil)
+            self.present(signUpVC, animated: true, completion: nil)
             
         } else {
             
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let pageViewController = segue.destinationViewController as? OnboardingQuotePageViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let pageViewController = segue.destination as? OnboardingQuotePageViewController {
             
             pageViewController.didUpdatePageCountClosure = { [weak self] (count: Int) in
                 self?.pageControl.numberOfPages = count
             }
             pageViewController.didUpdatePageIndexClosure = { [weak self] (index: Int) in
                 self?.pageControl.currentPage = index
-                if let pageControl = self?.pageControl where index == pageControl.numberOfPages - 1 {
-                    self?.doneButton.hidden = false
+                if let pageControl = self?.pageControl , index == pageControl.numberOfPages - 1 {
+                    self?.doneButton.isHidden = false
 //                    self?.skipButton.hidden = true
                 } else {
-                    self?.doneButton.hidden = true
+                    self?.doneButton.isHidden = true
 //                    self?.skipButton.hidden = false
                 }
             }

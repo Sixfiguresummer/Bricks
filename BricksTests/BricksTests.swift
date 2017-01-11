@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import Bricks
 
 class BricksTests: XCTestCase {

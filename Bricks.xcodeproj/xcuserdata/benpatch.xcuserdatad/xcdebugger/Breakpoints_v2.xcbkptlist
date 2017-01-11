@@ -16,7 +16,7 @@
             startingLineNumber = "238"
             endingLineNumber = "238"
             landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,7 +32,7 @@
             startingLineNumber = "245"
             endingLineNumber = "245"
             landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,13 +48,13 @@
             startingLineNumber = "35"
             endingLineNumber = "35"
             landmarkName = "presentDigits(_:changePhoneNumberCompletionBlock:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
@@ -64,13 +64,13 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "presentDigits(_:changePhoneNumberCompletionBlock:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/SignUpViewController.swift"
@@ -80,13 +80,13 @@
             startingLineNumber = "273"
             endingLineNumber = "273"
             landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/SignUpViewController.swift"
@@ -96,7 +96,7 @@
             startingLineNumber = "250"
             endingLineNumber = "250"
             landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             startingLineNumber = "260"
             endingLineNumber = "260"
             landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -127,8 +127,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "286"
             endingLineNumber = "286"
-            landmarkName = "textField(_:shouldChangeCharactersInRange:replacementString:)"
-            landmarkType = "5">
+            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,7 +144,7 @@
             startingLineNumber = "57"
             endingLineNumber = "57"
             landmarkName = "setLoginCB(_:user:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,7 +160,7 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "presentDigits(_:changePhoneNumberCompletionBlock:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -176,7 +176,7 @@
             startingLineNumber = "94"
             endingLineNumber = "94"
             landmarkName = "checkEnableSubmitButton()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -191,8 +191,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "288"
             endingLineNumber = "288"
-            landmarkName = "textField(_:shouldChangeCharactersInRange:replacementString:)"
-            landmarkType = "5">
+            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -207,8 +207,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "308"
             endingLineNumber = "308"
-            landmarkName = "textField(_:shouldChangeCharactersInRange:replacementString:)"
-            landmarkType = "5">
+            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -224,7 +224,7 @@
             startingLineNumber = "111"
             endingLineNumber = "111"
             landmarkName = "instantiateUser(_:lastName:phoneNumber:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -240,7 +240,7 @@
             startingLineNumber = "108"
             endingLineNumber = "108"
             landmarkName = "instantiateUser(_:lastName:phoneNumber:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -256,13 +256,13 @@
             startingLineNumber = "54"
             endingLineNumber = "54"
             landmarkName = "setupCell(_:roleToAddGoalsTo:delegate:isOnboardingMode:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/SignUpViewController.swift"
@@ -272,7 +272,7 @@
             startingLineNumber = "64"
             endingLineNumber = "64"
             landmarkName = "setLoginCB(_:user:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -288,13 +288,13 @@
             startingLineNumber = "166"
             endingLineNumber = "166"
             landmarkName = "submitButtonTapped(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
@@ -304,13 +304,13 @@
             startingLineNumber = "27"
             endingLineNumber = "27"
             landmarkName = "presentDigits(_:changePhoneNumberCompletionBlock:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
@@ -320,13 +320,13 @@
             startingLineNumber = "114"
             endingLineNumber = "114"
             landmarkName = "getUserForPhoneNumber(_:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
@@ -336,37 +336,37 @@
             startingLineNumber = "115"
             endingLineNumber = "115"
             landmarkName = "getUserForPhoneNumber(_:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static Bricks.FirebaseController.getUserForPhoneNumber (Swift.String, completion : (user : Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "static Bricks.FirebaseController.getUserForPhoneNumber (Swift.String, completion : (Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Bricks"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
-                  timestampString = "498060778.379278"
+                  timestampString = "500669242.854717"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "115"
                   endingLineNumber = "115"
-                  offsetFromSymbolStart = "139">
+                  offsetFromSymbolStart = "112">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static Bricks.FirebaseController.(getUserForPhoneNumber (Swift.String, completion : (user : Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  symbolName = "static Bricks.FirebaseController.(getUserForPhoneNumber (Swift.String, completion : (Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "Bricks"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
-                  timestampString = "498060778.37939"
+                  timestampString = "500669242.856675"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "117"
                   endingLineNumber = "117"
-                  offsetFromSymbolStart = "35">
+                  offsetFromSymbolStart = "44">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -374,7 +374,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
@@ -384,39 +384,39 @@
             startingLineNumber = "117"
             endingLineNumber = "117"
             landmarkName = "getUserForPhoneNumber(_:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
-            timestampString = "498060569.982237"
+            timestampString = "500672018.687862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "516"
             endingLineNumber = "516"
             landmarkName = "checkPhoneNumber(_:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
-            timestampString = "498060570.734312"
+            timestampString = "500672018.687862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "518"
             endingLineNumber = "518"
             landmarkName = "checkPhoneNumber(_:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -432,13 +432,13 @@
             startingLineNumber = "239"
             endingLineNumber = "239"
             landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/SignUpViewController.swift"
@@ -448,37 +448,37 @@
             startingLineNumber = "243"
             endingLineNumber = "243"
             landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Bricks.SignUpViewController.textFieldDidBeginEditing (__ObjC.UITextField) -&gt; ()"
                   moduleName = "Bricks"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benpatch/Documents/GoalsForRoles/SignUpViewController.swift"
-                  timestampString = "498060803.911209"
+                  timestampString = "500669242.869082"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "243"
                   endingLineNumber = "243"
-                  offsetFromSymbolStart = "354">
+                  offsetFromSymbolStart = "364">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Bricks.SignUpViewController.(textFieldDidBeginEditing (__ObjC.UITextField) -&gt; ()).(closure #1)"
                   moduleName = "Bricks"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benpatch/Documents/GoalsForRoles/SignUpViewController.swift"
-                  timestampString = "498060803.911384"
+                  timestampString = "500669242.870727"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "245"
                   endingLineNumber = "245"
-                  offsetFromSymbolStart = "19">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -496,13 +496,13 @@
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "presentDigits(_:changePhoneNumberCompletionBlock:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
@@ -512,39 +512,675 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "presentDigits(_:changePhoneNumberCompletionBlock:completion:)"
-            landmarkType = "5">
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Bricks.DigitsController.(presentDigits (Swift.String, changePhoneNumberCompletionBlock : Swift.Optional&lt;() -&gt; ()&gt;, completion : (Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
+                  timestampString = "500670507.185318"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Bricks.DigitsController.(presentDigits (Swift.String, changePhoneNumberCompletionBlock : Swift.Optional&lt;() -&gt; ()&gt;, completion : (Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
+                  timestampString = "500670507.1873"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "malloc_error_break"
+            moduleName = "libsystem_c.dylib">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/DateController.swift"
+            timestampString = "500669242.655497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "390"
+            endingLineNumber = "390"
+            landmarkName = "dateIsLaterThanDate(_:secondDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/DateController.swift"
+            timestampString = "500668949.209412"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "weeksOfAMonth(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
+            timestampString = "500670544.908899"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "presentDigits(_:changePhoneNumberCompletionBlock:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Bricks.DigitsController.(presentDigits (Swift.String, changePhoneNumberCompletionBlock : Swift.Optional&lt;() -&gt; ()&gt;, completion : (Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
+                  timestampString = "500670594.721758"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Bricks.DigitsController.(presentDigits (Swift.String, changePhoneNumberCompletionBlock : Swift.Optional&lt;() -&gt; ()&gt;, completion : (Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;__ObjC.UIAlertController&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
+                  timestampString = "500670594.723822"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500670788.379049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "getUserForPhoneNumber(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500670791.161635"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "getUserForPhoneNumber(_:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Bricks.FirebaseController.getUserForPhoneNumber (Swift.String, completion : (Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+                  timestampString = "500679824.563761"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "1360">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Bricks.FirebaseController.(getUserForPhoneNumber (Swift.String, completion : (Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+                  timestampString = "500679824.565427"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "2232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+            timestampString = "500693673.689838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "updateRolesArrays()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+            timestampString = "500693673.689838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "updateRolesArrays()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+            timestampString = "500693673.689838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "updateRolesArrays()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bricks.NotificationsListTableViewController.(updateRolesArrays () -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+                  timestampString = "500692682.755622"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bricks.NotificationsListTableViewController.(updateRolesArrays () -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+                  timestampString = "500692682.757842"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "70">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500680030.981185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "getUserForPhoneNumber(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500680032.149106"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "getUserForPhoneNumber(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500680036.496926"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "getUserForPhoneNumber(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500680037.518373"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "getUserForPhoneNumber(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/SignUpViewController.swift"
+            timestampString = "500680186.820154"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "textFieldDidBeginEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500680228.665292"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
+            landmarkName = "getGoalsForRoleID(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500680490.281587"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "494"
+            endingLineNumber = "494"
+            landmarkName = "getGoalsForRoleID(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500680499.927743"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "495"
+            endingLineNumber = "495"
+            landmarkName = "getGoalsForRoleID(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/FirebaseController.swift"
+            timestampString = "500693361.365479"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "503"
+            endingLineNumber = "503"
+            landmarkName = "getGoalsForRoleID(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/RoleController.swift"
+            timestampString = "500693834.562041"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
+            landmarkName = "updateNonRequestAccountabilityRoles(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+            timestampString = "500693855.787482"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "updateRolesArrays()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bricks.NotificationsListTableViewController.(updateRolesArrays () -&gt; ()).(closure #1)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+                  timestampString = "500693856.005286"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1454">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bricks.NotificationsListTableViewController.(updateRolesArrays () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Bricks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+                  timestampString = "500693856.00785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/RoleController.swift"
+            timestampString = "500694032.132009"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "updateAccountabilityRoles(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+            timestampString = "500694043.40175"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "updateRolesArrays()"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static Bricks.DigitsController.(presentDigits (Swift.String, changePhoneNumberCompletionBlock : Swift.Optional&lt;() -&gt; ()&gt;, completion : (error : Swift.Optional&lt;__ObjC.NSError&gt;, numberInUseAlertController : Swift.Optional&lt;__ObjC.UIAlertController&gt;, changeValidPhoneNumberAlertController : Swift.Optional&lt;__ObjC.UIAlertController&gt;, newPhoneNumber : Swift.Optional&lt;Swift.String&gt;, user : Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  symbolName = "Bricks.NotificationsListTableViewController.updateRolesArrays () -&gt; ()"
                   moduleName = "Bricks"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
-                  timestampString = "498060875.625419"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+                  timestampString = "503099109.463013"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "430">
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "16">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static Bricks.DigitsController.(presentDigits (Swift.String, changePhoneNumberCompletionBlock : Swift.Optional&lt;() -&gt; ()&gt;, completion : (error : Swift.Optional&lt;__ObjC.NSError&gt;, numberInUseAlertController : Swift.Optional&lt;__ObjC.UIAlertController&gt;, changeValidPhoneNumberAlertController : Swift.Optional&lt;__ObjC.UIAlertController&gt;, newPhoneNumber : Swift.Optional&lt;Swift.String&gt;, user : Swift.Optional&lt;Bricks.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  symbolName = "Bricks.NotificationsListTableViewController.(updateRolesArrays () -&gt; ()).(closure #1)"
                   moduleName = "Bricks"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/DigitsController.swift"
-                  timestampString = "498060875.625581"
+                  urlString = "file:///Users/benpatch/Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+                  timestampString = "503099109.465553"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "447">
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/NotificationsListTableViewController.swift"
+            timestampString = "500694126.973185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "updateRolesArrays()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/RoleController.swift"
+            timestampString = "500707138.936125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "updateNonRequestAccountabilityRoles(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/RoleController.swift"
+            timestampString = "500707158.119701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "updateNonRequestAccountabilityRoles(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bricks/User.swift"
+            timestampString = "500707180.591662"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "getValidRolesForWeek(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bricks/User.swift"
+            timestampString = "500707252.133303"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "getValidRolesForWeek(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bricks/Role.swift"
+            timestampString = "500711105.042224"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "init(dictionary:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/StringExtension.swift"
+            timestampString = "500711154.48794"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "String"
+            landmarkType = "4">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/GoalsForRoles/GoalsForRoles/NewRoleTableViewCell.swift"
+            timestampString = "503099108.206891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "textFieldDidBeginEditing(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

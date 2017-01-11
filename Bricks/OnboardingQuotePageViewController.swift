@@ -19,9 +19,9 @@ class OnboardingQuotePageViewController: UIPageViewController {
         dataSource = self
         delegate = self
         
-        setViewControllers([orderedViewControllers[0]], direction: .Forward, animated: true, completion: nil)
+        setViewControllers([orderedViewControllers[0]], direction: .forward, animated: true, completion: nil)
 
-        self.didUpdatePageCountClosure?(count: orderedViewControllers.count)
+        self.didUpdatePageCountClosure?(orderedViewControllers.count)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,9 +29,9 @@ class OnboardingQuotePageViewController: UIPageViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var didUpdatePageCountClosure: ((count: Int) -> Void)?
+    var didUpdatePageCountClosure: ((_ count: Int) -> Void)?
     
-    var didUpdatePageIndexClosure: ((index: Int) -> Void)?
+    var didUpdatePageIndexClosure: ((_ index: Int) -> Void)?
 
 
     /*
@@ -44,12 +44,12 @@ class OnboardingQuotePageViewController: UIPageViewController {
     }
     */
 
-    private lazy var orderedViewControllers: [UIViewController] = [
-        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Quote1"),
-        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Quote2"),
+    fileprivate lazy var orderedViewControllers: [UIViewController] = [
+        UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Quote1"),
+        UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Quote2"),
 //        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Quote3"),
-        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Quote4"),
-        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Quote5")
+        UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Quote4"),
+        UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Quote5")
     ]
     
 }
@@ -57,8 +57,8 @@ class OnboardingQuotePageViewController: UIPageViewController {
 
 extension OnboardingQuotePageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = orderedViewControllers.indexOf(viewController) else {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
         
@@ -72,8 +72,8 @@ extension OnboardingQuotePageViewController: UIPageViewControllerDataSource, UIP
 
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = orderedViewControllers.indexOf(viewController) else {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
         
@@ -92,11 +92,11 @@ extension OnboardingQuotePageViewController: UIPageViewControllerDataSource, UIP
     }
     
     
-    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if let firstViewController = viewControllers?.first,
-            let index = orderedViewControllers.indexOf(firstViewController) {
+            let index = orderedViewControllers.index(of: firstViewController) {
             guard let closure = didUpdatePageIndexClosure else { return }
-            closure(index: index)
+            closure(index)
         }
     }
 

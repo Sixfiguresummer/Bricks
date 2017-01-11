@@ -35,7 +35,7 @@ class User {
         }
     }
     
-    private var roles: [Role] = []
+    fileprivate var roles: [Role] = []
     var allRoles: [Role] {
         return self.roles
     }
@@ -67,10 +67,10 @@ class User {
     
     func toDictionary() -> [String: AnyObject]{
         let dictionary: [String: AnyObject] = [
-            User.kUserID : userID,
-            User.kFirstName : firstName,
-            User.kLastName : lastName,
-            User.kPhoneNumber : phoneNumber
+            User.kUserID : userID as AnyObject,
+            User.kFirstName : firstName as AnyObject,
+            User.kLastName : lastName as AnyObject,
+            User.kPhoneNumber : phoneNumber as AnyObject
         ]
         
         return dictionary
@@ -81,13 +81,13 @@ class User {
         
         // Does not account for the user not already being set up with a User ID. That is the responsibility of the FirebaseController.registerUser() method.
         
-        var firebaseEndpoint = FirebaseController.base.childByAppendingPath(User.endpoint)
+        var firebaseEndpoint = FirebaseController.base?.child(byAppendingPath: User.endpoint)
         
         guard userID != ""  else { print("Cannot save User with no UserID"); return }
         
-        firebaseEndpoint = firebaseEndpoint.childByAppendingPath(userID)
+        firebaseEndpoint = firebaseEndpoint?.child(byAppendingPath: userID)
         
-        firebaseEndpoint.updateChildValues(toDictionary())
+        firebaseEndpoint?.updateChildValues(toDictionary())
 
         roles.forEach { (role) -> () in
             role.save()
@@ -95,16 +95,16 @@ class User {
 
     }
     
-    func addRole(role: Role) {
+    func addRole(_ role: Role) {
         self.roles.append(role)
     }
     
-    func setRoles(roles: [Role]) {
+    func setRoles(_ roles: [Role]) {
         self.roles = roles
     }
     
     
-    func getValidRolesForWeek(week: (firstDay: NSDate, lastDay: NSDate)) -> [Role]? {
+    func getValidRolesForWeek(_ week: (firstDay: Date, lastDay: Date)) -> [Role]? {
         var validRoles = [Role]()
         for role in roles {
             if !DateController.dateIsLaterThanDate(role.dateCreated, secondDate: week.lastDay) {
@@ -121,12 +121,12 @@ class User {
         return validRoles.count > 0 ? validRoles : nil
     }
     
-    func getValidRolesForWeekStartingOnDate(startDate: NSDate) -> [Role]? {
+    func getValidRolesForWeekStartingOnDate(_ startDate: Date) -> [Role]? {
         let week = DateController.weekStartingOnDate(startDate)
         return self.getValidRolesForWeek(week)
     }
     
-    func getValidRolesForDate(date: NSDate = NSDate()) -> [Role]? {
+    func getValidRolesForDate(_ date: Date = Date()) -> [Role]? {
         var validRoles = [Role]()
         for role in roles {
             if !DateController.dateIsLaterThanDate(role.dateCreated, secondDate: date) || DateController.dateEqualsDate(role.dateCreated, secondDate: date) {
